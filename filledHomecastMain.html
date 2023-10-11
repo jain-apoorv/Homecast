@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <!-- fontawesome kit -->
+    <script src="https://kit.fontawesome.com/4c6ec9ce5b.js" crossorigin="anonymous"></script>
+
+    <style>
+        :root {
+            --gradient: linear-gradient(to left top, #DD2476 10%, #FF512F 90%) !important;
+        }
+
+        body {
+            background: #111 !important;
+        }
+
+        .card {
+            background: #222;
+            border: 1px solid #dd2476;
+            color: rgba(250, 250, 250, 0.8);
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            border: 5px solid;
+            border-image-slice: 1;
+            background: var(--gradient) !important;
+            -webkit-background-clip: text !important;
+            -webkit-text-fill-color: transparent !important;
+            border-image-source: var(--gradient) !important;
+            text-decoration: none;
+            transition: all .4s ease;
+        }
+
+        .btn:hover,
+        .btn:focus {
+            background: var(--gradient) !important;
+            -webkit-background-clip: none !important;
+            -webkit-text-fill-color: #fff !important;
+            border: 5px solid #fff !important;
+            box-shadow: #222 1px 0 10px;
+            text-decoration: underline;
+        }
+
+        .movies {
+            margin-left: 20%;
+
+        }
+
+        .folder {
+            background: linear-gradient(111.9deg, rgb(221, 49, 49) 0.3%, rgb(0, 8, 119) 100.7%);
+            width: 200px;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="container m-2 sticky-top">
+
+
+        <nav class="navbar navbar-light bg-transparent navbar-expand-md">
+            <!-- <div class="container w-25 h-100"></div> -->
+
+
+            <div class="container">
+                <a href="" class="navbar-brand mb-0 h1" href="" style="color: white
+      "><img src="logo_homecast.png" alt="logo" class="d-inline-block align-top " height="30" width="30"> Homecast</a>
+
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-expanded="false" aria-controls="navbarCollapse" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="" class="nav-link active link-success">Home</a></li>
+                    </ul>
+
+                </div>
+                <form action="" class="d-flex">
+                    <input type="text" class="form-control me-2">
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </form>
+
+            </div>
+
+
+
+        </nav>
+
+    </div>
+
+    <div class="container d-flex m-0">
+        <div class="folder" style="position: fixed; ">
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i> Visit</a>
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i> Visit Site</a>
+        </div>
+        <div class="container movies mt-4">
+    <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
+    <div class="col">
+    <div class="card" style="width: 18rem;">
+        <video src="/video0" class="img-top" loop controls></video>
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p> -->
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i>More</a>
+        </div>
+    </div>
+</div><div class="col">
+    <div class="card" style="width: 18rem;">
+        <video src="/video1" class="img-top" loop controls></video>
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p> -->
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i>More</a>
+        </div>
+    </div>
+</div><div class="col">
+    <div class="card" style="width: 18rem;">
+        <video src="/video2" class="img-top" loop controls></video>
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p> -->
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i>More</a>
+        </div>
+    </div>
+</div><div class="col">
+    <div class="card" style="width: 18rem;">
+        <video src="/video3" class="img-top" loop controls></video>
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p> -->
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i>More</a>
+        </div>
+    </div>
+</div><div class="col">
+    <div class="card" style="width: 18rem;">
+        <video src="/video4" class="img-top" loop controls></video>
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p> -->
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i>More</a>
+        </div>
+    </div>
+</div><div class="col">
+    <div class="card" style="width: 18rem;">
+        <video src="/video5" class="img-top" loop controls></video>
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p> -->
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i>More</a>
+        </div>
+    </div>
+</div><div class="col">
+    <div class="card" style="width: 18rem;">
+        <video src="/video6" class="img-top" loop controls></video>
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p> -->
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i>More</a>
+        </div>
+    </div>
+</div><div class="col">
+    <div class="card" style="width: 18rem;">
+        <video src="/video7" class="img-top" loop controls></video>
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p> -->
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i>More</a>
+        </div>
+    </div>
+</div><div class="col">
+    <div class="card" style="width: 18rem;">
+        <video src="/video8" class="img-top" loop controls></video>
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p> -->
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i>More</a>
+        </div>
+    </div>
+</div><div class="col">
+    <div class="card" style="width: 18rem;">
+        <video src="/video9" class="img-top" loop controls></video>
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p> -->
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i>More</a>
+        </div>
+    </div>
+</div><div class="col">
+    <div class="card" style="width: 18rem;">
+        <video src="/video10" class="img-top" loop controls></video>
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p> -->
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i>More</a>
+        </div>
+    </div>
+</div><div class="col">
+    <div class="card" style="width: 18rem;">
+        <video src="/video11" class="img-top" loop controls></video>
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p> -->
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i>More</a>
+        </div>
+    </div>
+</div><div class="col">
+    <div class="card" style="width: 18rem;">
+        <video src="/video12" class="img-top" loop controls></video>
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p> -->
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i>More</a>
+        </div>
+    </div>
+</div><div class="col">
+    <div class="card" style="width: 18rem;">
+        <video src="/video13" class="img-top" loop controls></video>
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p> -->
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i>More</a>
+        </div>
+    </div>
+</div><div class="col">
+    <div class="card" style="width: 18rem;">
+        <video src="/video14" class="img-top" loop controls></video>
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p> -->
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i>More</a>
+        </div>
+    </div>
+</div><div class="col">
+    <div class="card" style="width: 18rem;">
+        <video src="/video15" class="img-top" loop controls></video>
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p> -->
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i>More</a>
+        </div>
+    </div>
+</div><div class="col">
+    <div class="card" style="width: 18rem;">
+        <video src="/video16" class="img-top" loop controls></video>
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p> -->
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i>More</a>
+        </div>
+    </div>
+</div><div class="col">
+    <div class="card" style="width: 18rem;">
+        <video src="/video17" class="img-top" loop controls></video>
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p> -->
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i>More</a>
+        </div>
+    </div>
+</div><div class="col">
+    <div class="card" style="width: 18rem;">
+        <video src="/video18" class="img-top" loop controls></video>
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p> -->
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i>More</a>
+        </div>
+    </div>
+</div><div class="col">
+    <div class="card" style="width: 18rem;">
+        <video src="/video19" class="img-top" loop controls></video>
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p> -->
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i>More</a>
+        </div>
+    </div>
+</div><div class="col">
+    <div class="card" style="width: 18rem;">
+        <video src="/video20" class="img-top" loop controls></video>
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p> -->
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i>More</a>
+        </div>
+    </div>
+</div><div class="col">
+    <div class="card" style="width: 18rem;">
+        <video src="/video21" class="img-top" loop controls></video>
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p> -->
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i>More</a>
+        </div>
+    </div>
+</div><div class="col">
+    <div class="card" style="width: 18rem;">
+        <video src="/video22" class="img-top" loop controls></video>
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p> -->
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i>More</a>
+        </div>
+    </div>
+</div><div class="col">
+    <div class="card" style="width: 18rem;">
+        <video src="/video23" class="img-top" loop controls></video>
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p> -->
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i>More</a>
+        </div>
+    </div>
+</div><div class="col">
+    <div class="card" style="width: 18rem;">
+        <video src="/video24" class="img-top" loop controls></video>
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p> -->
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i>More</a>
+        </div>
+    </div>
+</div><div class="col">
+    <div class="card" style="width: 18rem;">
+        <video src="/video25" class="img-top" loop controls></video>
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p> -->
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i>More</a>
+        </div>
+    </div>
+</div><div class="col">
+    <div class="card" style="width: 18rem;">
+        <video src="/video26" class="img-top" loop controls></video>
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p> -->
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i>More</a>
+        </div>
+    </div>
+</div><div class="col">
+    <div class="card" style="width: 18rem;">
+        <video src="/video27" class="img-top" loop controls></video>
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p> -->
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i>More</a>
+        </div>
+    </div>
+</div><div class="col">
+    <div class="card" style="width: 18rem;">
+        <video src="/video28" class="img-top" loop controls></video>
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p> -->
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i>More</a>
+        </div>
+    </div>
+</div><div class="col">
+    <div class="card" style="width: 18rem;">
+        <video src="/video29" class="img-top" loop controls></video>
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p> -->
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i>More</a>
+        </div>
+    </div>
+</div><div class="col">
+    <div class="card" style="width: 18rem;">
+        <video src="/video30" class="img-top" loop controls></video>
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p> -->
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i>More</a>
+        </div>
+    </div>
+</div><div class="col">
+    <div class="card" style="width: 18rem;">
+        <video src="/video31" class="img-top" loop controls></video>
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p> -->
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i>More</a>
+        </div>
+    </div>
+</div><div class="col">
+    <div class="card" style="width: 18rem;">
+        <video src="/video32" class="img-top" loop controls></video>
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p> -->
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i>More</a>
+        </div>
+    </div>
+</div><div class="col">
+    <div class="card" style="width: 18rem;">
+        <video src="/video33" class="img-top" loop controls></video>
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p> -->
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i>More</a>
+        </div>
+    </div>
+</div><div class="col">
+    <div class="card" style="width: 18rem;">
+        <video src="/video34" class="img-top" loop controls></video>
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p> -->
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i>More</a>
+        </div>
+    </div>
+</div><div class="col">
+    <div class="card" style="width: 18rem;">
+        <video src="/video35" class="img-top" loop controls></video>
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p> -->
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i>More</a>
+        </div>
+    </div>
+</div><div class="col">
+    <div class="card" style="width: 18rem;">
+        <video src="/video36" class="img-top" loop controls></video>
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p> -->
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i>More</a>
+        </div>
+    </div>
+</div><div class="col">
+    <div class="card" style="width: 18rem;">
+        <video src="/video37" class="img-top" loop controls></video>
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p> -->
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i>More</a>
+        </div>
+    </div>
+</div><div class="col">
+    <div class="card" style="width: 18rem;">
+        <video src="/video38" class="img-top" loop controls></video>
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p> -->
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i>More</a>
+        </div>
+    </div>
+</div><div class="col">
+    <div class="card" style="width: 18rem;">
+        <video src="/video39" class="img-top" loop controls></video>
+
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's content.</p> -->
+            <a href="#" class="btn mr-2"><i class="fas fa-link"></i>More</a>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+
+    <form action="/enterFolder" method="post" style="align-self: center;">
+        <div class="container d-flex flex-column align-items-center mt-5 pt-5">
+            <label for="folderinput" style="color: aqua;">Add the path of folder to stream videos to your
+                friends</label>
+            <div class="input-group w-50">
+                <div class="input-group-text"><i class="fa-solid fa-folder"></i></div>
+                <input required class="form-control" type="text" name="folder" placeholder="enter the folder directory"
+                    id="folderinput" />
+            </div>
+            <button type="submit" class="btn">Add</button>
+        </div>
+    </form>
+    <!-- <input type="file" id="ctrl" webkitdirectory directory multiple/> -->
+</body>
